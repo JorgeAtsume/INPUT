@@ -1,0 +1,61 @@
+:root {
+    --text-color: rgb(192, 187, 187);
+    --principal-color: rgb(89, 87, 87);
+    --accent-color: rgb(143, 255, 103);
+  }
+
+*
+{
+   font-family: Roboto;
+}
+
+  body {
+	background: url(https://images.unsplash.com/photo-1595776613215-fe04b78de7d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+
+.container { 
+    width: 350px;
+    margin-top: 120px;
+    padding: 5px;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-width: 3px;
+    background-color: rgba(28, 40, 39, 0.3);
+    backdrop-filter: blur(5px);
+    
+}
+
+img {
+    width: 180px;
+    border: 3px solid var(--accent-color);
+    border-radius:50%;
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+p {
+    color: var(--text-color);
+    margin: 30px;
+}
+
+ul{
+    color: var(--text-color);
+}
+
+a:link {
+    color: darkgrey;
+  }
+
+a:visited {
+    color: var(--accent-color);
+  }

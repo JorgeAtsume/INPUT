@@ -1,0 +1,62 @@
+:root {
+    --text-color: rgb(198, 198, 200);
+    --principal-color: rgb(89, 87, 87);
+  }
+
+*
+{
+   font-family: Roboto;
+}
+
+  body {
+	background: url(https://images.unsplash.com/photo-1508098682722-e99c43a406b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+
+.container { 
+    width: 400px;
+    margin-top: 120px;
+    padding: 5px;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-width: 3px;
+    background-color: rgba(89, 87, 87, 0.25);
+    backdrop-filter: blur(5px);
+    
+}
+
+img {
+    width: 180px;
+    border: 3px solid var(--principal-color);
+    border-radius:50%;
+}
+
+h1, h2 {
+    color: var(--text-color);
+}
+
+ul{
+    color: var(--text-color);
+}
+
+th, td {
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+
+table {
+    align-self: center;
+    border-spacing: 10px;
+    color: var(--text-color);
+}
+
+#td-align {
+    text-align: left;
+}
