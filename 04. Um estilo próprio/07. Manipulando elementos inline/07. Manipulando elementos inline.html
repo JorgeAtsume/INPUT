@@ -1,0 +1,38 @@
+<!-- 
+    Manipulando elementos Inline
+    As propriedades dos elementos inline não permitem alteração de:
+    - margin:
+    - width:
+
+    Pode se utilizar o inline block para poder alterar essas propriedades
+    oferecendo um meio termo entre os dois
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .block{
+            display:inline-block;
+            background-color: gray;
+            margin: 20px;
+            width: 150px;
+        }
+    </style>
+
+    <title>Developer Tool</title>
+</head>
+<body>
+    <div class="block">A</div>
+    <div class="block">A</div>
+    <div class="block">A</div>
+    <br>
+    <a class="block" href="">link</a>
+    <a class="block" href="">link</a>
+    <a class="block" href="">link</a>
+</body>
+</html>
