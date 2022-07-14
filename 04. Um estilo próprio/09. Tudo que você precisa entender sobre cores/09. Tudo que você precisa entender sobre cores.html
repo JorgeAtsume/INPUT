@@ -1,0 +1,60 @@
+<!--
+    Tudo que você precisa entender sobre cores
+    
+    Teoria das cores:
+    - Primarias (Vermelho, verde e azul)
+    - Secundarias são cores criadas apartir das cores primarias
+      ex: Verde + Azul = Amarelo
+
+    https://www.colorspire.com/rgb-color-wheel/
+
+    Nomenclatura Binaria as cores são representadas em uma sequencia de 0 e 1's
+
+    Nomenclatura RGB cada byte representa 1 byte(0-255)
+    RGB(0,0,0)
+
+    Nomenclatura Hexadecimal é outra forma de representar cores onde
+    as cores são representadas de 0-9 e A até F
+    Sempre são representados por 6 caracteres ex #FF3D3F
+
+    podem ser usados outros tipos de representação como HSB,HSL etc..
+    ex: hsl(hue, saturation, lightness)
+
+    https://www.w3schools.com/colors/colors_hsl.asp
+
+    O padrão a ser utilizado no desenvolvimento web é o HEXADECIMAL
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+
+    <style>
+        .cor1{
+            background: red;
+            color: white;
+        }
+        .cor2{
+            background-color: rgb(21, 198, 198);
+            color: white;
+        }
+        .cor3{
+            background-color: #780a9f;
+            color: white;
+        }
+        .cor4{
+            background-color: hsl(28, 95%, 44%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="cor1"><p>REPRESENTACAO COR</p></div>
+    <div class="cor2"><p>REPRESENTACAO RGB</p></div>
+    <div class="cor3"><p>REPRESENTACAO HEXADECIMAL</p></div>
+    <div class="cor4"><p>REPRESENTACAO HSL</p></div>
+</body>
+</html>
