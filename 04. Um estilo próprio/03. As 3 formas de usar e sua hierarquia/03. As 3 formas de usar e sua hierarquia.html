@@ -1,0 +1,70 @@
+<!--
+    As 3 formas de usar e Hierarquia CSS
+
+    - Primeira forma (CSS INLINE):
+    Mais dificil de ler e dar manutencao no codigo
+
+    - Segunda forma (Adicionando ao cabeçalho):
+    Colocando um seletor css dentro da tag <style rel="stylesheet">
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS HIERARQUIA</title>
+
+    <!-- * coringa pra usar a mesma propriedade e valor em todo o documento -->
+    <!-- Para usar mais de um seletor se usa as tags separadas por virgula p,a,h1 etc.. -->
+    <!-- Para usar se usar em apenas um elemento especifico se usa #(id) .(classe) -->
+    
+    <!--
+        Seletor ID: deve se ter apenas um id unico em todo documento
+        Seletor Classe: é utilizado para reutilizar propriedades entre elementos
+        Seletor Tag: é utilizado para estilizar uma determinada tag em todo o documento
+    -->
+    
+    <!--
+        3 Formas de aplicar estilos css (inline, head, arquivos externo.
+        
+        No CSS existe uma hierarquia:
+        Primeiro se dá prioridade ao inline
+        Depois se dá prioridade ao head
+        Por ultimo se dá prioridade ao externo
+        
+        se deve tomar cuidado com a hierarquia para não sobrescrever
+        as propriedades definidas anteriormente
+    -->
+
+    <!-- Adicionando um arquivo CSS externo -->
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        h2 {color: rgb(122, 5, 232);}
+        #bg-style {background-color: aquamarine;}
+    </style>
+
+</head>
+<body>
+
+    <!-- CSS INLINE -->
+    <h1 style="color:blue; background: grey; font-size: 25px;"> CSS INLINE </h1>
+    <h2> CSS CABEÇALHO </h1>
+    <h3> CSS </h3>
+
+    <div id="bg-style">
+        <p>Seletor id 1</p>
+    </div>
+
+    <div class="bg-new">
+        <p>Selector classe 1</p>
+    </div>
+
+    <div class="bg-new">
+        <p>Selector classe 2</p>
+    </div>
+
+</body>
+</html>
