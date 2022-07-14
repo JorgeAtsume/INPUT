@@ -1,0 +1,103 @@
+<!-- 
+    Como o navegador renderiza
+    Renderizar é como o navegador interpreta os elementos e os exibe na tela
+    Ele começa a exibir os elementos na seguinte ordem:
+    - De cima para baixo
+    - Da esquerda para a direita
+
+    - Quando eu defino uma largura atributo display:block ele ocuopa a 
+    tela inteira mas exibe apenas a pargura que foi definido, assim 
+    exibindo em linhas.
+
+    - Quando utilizo o atributo display:inline-block ele passa a exibir
+    como apenas uma linha colocando um elemento ao lado do outro.
+
+    Assim você pode montar uma grade de linhas e colunas definindo o
+    tamanho dos seus elementos
+
+    Antigamente se fazia uma table utilizando o elemento table (deprecado)
+
+    Os elementos sempre serão dispostos em forma de grade por isto se deve
+    fazer o design da nossa pagina utilizando linhas e colunas
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .block{
+            background-color: gray;
+        }
+
+        .grid{
+            display: inline-block;
+            background-color: rgb(16, 81, 222);
+            height: 150px;
+            width: 150px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+
+    <title>Developer Tool</title>
+</head>
+<body>
+    <div class="block">A</div>
+    <div class="block" style="width:50px; display: inline-block;">A</div>
+    <div class="block" style="width:150px; display: inline-block;">A</div>
+    <br>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+    <div class="grid">A</div>
+</body>
+</html>
