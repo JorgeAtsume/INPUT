@@ -1,0 +1,78 @@
+/* 
+Peso e nomenclatura das fontes
+
+100 - thin
+200
+300 - light
+400 - regular
+500 - medium
+600
+700 - bold
+800 - extra bold
+900 - black
+*/
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url(fonts/lemon-milk/LEMONMILK-Light.otf) format('otf');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url(fonts/lemon-milk/LEMONMILK-Regular.otf) format('otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url(fonts/lemon-milk/LEMONMILK-Medium.otf) format('otf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url(fonts/lemon-milk/LEMONMILK-Bold.otf) format('otf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url(fonts/lemon-milk/LEMONMILK-BoldItalic.otf) format('otf');
+    font-style: italic;
+    font-weight: 700;
+}
+
+body{
+    background: #2b2d42;
+    color: #edf2f4;
+    padding: 12px;
+    font-family: 'Lemon Milk', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.title {
+    background: #8D99AE;
+    border-radius: 10px;
+    color: #D90429;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 32px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.link {
+    color: #ef233c;
+    line-height: 20px;
+}
+
+.bio {
+    font-size: 18px;
+}
+
