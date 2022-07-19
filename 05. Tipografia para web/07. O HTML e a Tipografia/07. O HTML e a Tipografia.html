@@ -1,0 +1,45 @@
+<!--
+    <b> - deixa o texto em negrito e não tem semântica, apenas tem estilo
+    <strong> - ela tem valor semântico e deixa o texto em negrito (palavra forte/importante)
+
+    <i> - deixa o texto em itálico e não tem semântica, apenas tem estilo
+    <em> - ela tem valor semântico e deixa o texto e itálico (ênfase)
+
+    <u> - deixa o texto com underline e não tem semântica, apenas tem estilo
+
+    <span class="bold"> - pode ser usado para apenas adicionar estilo ao html
+
+    Estilo não utilizamos mais com tags html, para isso usamos o CSS
+
+    Estilo: CSS
+    Significado: HTML
+    
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Exercício 03 - Tipografia</title>
+    <style>
+        .bold{
+            font-weight: normal;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="title">Olá Tipografia</h1>
+        <p>Tipografia é uma parte <strong class="bold">essencial</strong> no design de paginas web, juntamente com outras duas partes: espaçamento e cores.</p>
+        <p>Você pode usar <i>vários tipos de fontes nos seus projetos</i>, e existem fontes pagas e gratuitas. Para fontes gratuitas, recomendo usar o Google Web Fonts, que permite que você importe as fontes diretamente, sem precisar fazer o download.</p>
+    </div>
+</body>
+
+</html>
