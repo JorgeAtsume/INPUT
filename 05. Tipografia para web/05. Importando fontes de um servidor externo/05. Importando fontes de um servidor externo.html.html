@@ -1,0 +1,37 @@
+<!--
+- family é um parametro para api de fontes do google
+- Conhecendo o fundamento podemos mudar a fonte através do parametro da url
+
+- O que está sendo feito é que o link do google fonts está baixando um arquivo css e 
+  e importando(download) através de font-faces varias fontes da api do google
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1 class="title">Olá Hiperlinks</h1>
+        <a class="link bio" href="/new" target="_blank">Meu Link</a>
+        <br>
+        <!-- Pega o estilo das duas classes por conta do cascateamento -->
+        <a class="link" href="http://codar.me" target="_blank">Codar.me</a>
+    </div>
+</body>
+
+</html>
