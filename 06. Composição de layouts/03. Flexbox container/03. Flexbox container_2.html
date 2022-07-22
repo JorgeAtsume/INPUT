@@ -1,0 +1,72 @@
+<!--
+    Aula de Flexbox
+    
+    Assim como display inline e block falam do proprio elemento, o display flex também
+    fala do proprio elemento mas principalmente dos elementos internos a ele.
+
+    Ele tem a capacidade de manipular os elementos filhos
+
+    Quando se usa display:flex os elementos filhos se comportam como inline
+
+    Container horizontal: vai dispor os filhos um ao lado do outro.
+    Container vertical: vai dispor os filhos um abaixo do outro.
+
+    Para isto usamos a propriedade:
+    flex-direction:row; (Dispoe como elementos inline, um ao lado do outro)
+    flex-direction:column; (Dispoe como elementos block, um abaixo do outro)
+
+    Por padrão ele dispe os elementos em forma de linha (row).
+
+    Quando falamos de flexbox falamos de alinhamento também, para colocar alinhado usando flexbox
+
+    quando eu retiro o elemento column, todos os elementos passam a ter a altura do container pois 
+    por padrão viram display:row
+
+    Eu posso alterar a altura da class item utilizando a propriedade height que ele irá respeitar
+    a altura que o elemento foi definido.
+
+    Caso eu queira que todos os itens do meu conteiner tenham uma altura de acordo com o conteudo
+    existe uma propriedade que se chama: 
+    
+    aligh-itens:flex-start;
+
+    Por padrão o flexbox é todo manipulados pelo seu container
+    Todo os itens dentro do container sao manipulados pelo seu container e nao pelos proprios itens
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #container{
+            display:flex;
+            background: #CCCCCC;
+            align-items: center;
+            justify-content: center;
+            /* align-items: flex-start; */
+            padding: 40px;
+            height: 600px;
+        }
+        .item{
+            background: #84de63;
+            padding: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">1</div>
+        <!-- <div class="item">2 <br> 2 <br> 2 <br> 2 <br> 2 <br> 2 <br> 2 <br> 2 <br> 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div> -->
+    </div>
+</body>
+</html>
