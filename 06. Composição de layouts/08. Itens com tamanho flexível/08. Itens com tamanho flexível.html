@@ -1,0 +1,111 @@
+<!--
+    Aula de Flexbox row-reverse
+
+    Existe uma priopriedade de alinhamento vertical (eixo Y) dos elementos no container:
+    
+    aligh-itens:flex-start; - alinha ao inicio do container
+    aligh-itens:center; - alinha centralizado ao container
+    aligh-itens:flex-end; - alinha ao final do container
+
+    A definição padrão é align-itens:stretch;
+
+    Existe uma priopriedade de alinhamento horizontal (eixo X) dos elementos no container:
+    
+    justify-content:flex-start; - alinha ao inicio do container
+    justify-content:center; - alinha centralizado ao container
+    justify-content:flex-end; - alinha ao final do container
+
+    A definição padrão é justify-content:flex-start;
+
+    Não é necessário decorar qual é vertical e qual é horizontal porque quando mudamos 
+    de row para column ele inverte o alinhamento
+
+    row:
+    justify-content:    - horizontal
+    aligh-itens:        - vertical
+
+    column:
+    justify-content:    - vertical
+    aligh-itens:        - horizontal
+
+
+    justify-content: space-around; - distribui igualmente o espaço que sobra em volta dos elementos
+    justify-content: space-between; - distribui igualmente o espaço que sobra entre os elementos
+
+    Da Mesma forma que existe o row também existe o row-reverse
+    e desma forma que existe o column também existe o column-reverse
+
+    FLEX GROW faz com que cada item dentro do container tenha o mesmo
+    tamanho preenchendo todo o espaço do container
+
+    1 = 100%, o conteiner inteiro, divide por igual a largura de cada item
+
+    é possivel definir um tamanho expecial para um elemento dentro do container
+    através da propriedade flex-grow:4
+
+    Onde eu posso falar que 1 elemento tem o tamanho x vezes maior que os demais
+
+    flex é um shorthand de outras 3 propriedades
+    flex-grow
+    flex-basis
+    flex-shrink
+
+    A ordem de especificidade é grow>shrink>basis
+    grow: aumenta conforme necessidade
+    shrink: diminui conforme necessidade
+    basis: tamanho inicial do elemento
+
+    Quando o flex-shrink:0 quando os lementos forem maiores que o tamanho
+    da tela acaba encavalando
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* 
+            default:
+            flex-direction: flex;
+            align-items: stretch;
+            justify-content: flex-start;
+        */
+        #container{
+            display:flex;
+            background: #CCCCCC;
+            height: 600px;
+        }
+        .item{
+            flex: 1;
+            background: #84de63;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        .double{
+            /* 
+            Valores padrão flex
+            flex: 0 1 auto;
+            flex-grow: 0; 
+            flex-shrink: 1;
+            flex-basis: auto; 
+            */
+            flex: 3;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">1</div>
+        <div class="item">2 <br> 2 <br> 2 <br> 2 <br> 2 <br> 2 <br> 2 <br> 2 <br> 2</div>
+        <div class="item">3</div>
+        <div class="item double">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+</body>
+</html>
