@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Flexbox</title>
+    <style>
+        :root {
+            --bg-color: rgb(233, 233, 233);
+        }
+
+        body,
+        html {
+            margin: 0;
+            height: 100%;
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        #box {
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            width: 400px;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            background: greenyellow;
+        }
+
+        #first-column{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #first-first{
+            background: var(--bg-color);
+            flex
+        }
+
+        #first-second{
+            background: var(--bg-color);
+        }
+
+        #first-third{
+            background: var(--bg-color);
+        }
+
+        #first-fourth{
+            background: var(--bg-color);
+        }
+
+        .second {
+            flex-grow: 1;
+            background: var(--bg-color);
+        }
+
+        .third {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        #third-five {
+            flex-grow: 1;
+            background: var(--bg-color);
+        }
+
+        #third-six {
+            align-items: center;
+            flex-grow: 1;
+            background: var(--bg-color);
+        }
+
+        #number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            background: white;
+        }
+
+        .border {
+            border-radius: 20px;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="box">
+            <div class="first">
+                <div id="first-first">
+                    <div id="number">0</div>
+                </div>
+                <div id="fist-column">
+                    <div id="first-second">
+                        <div id="number">1</div>
+                    </div>
+                    <div id="first-third">
+                        <div id="number">2</div>
+                    </div>
+                    <div id="first-fourth">
+                        <div id="number">3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <div id="number">4</div>
+            </div>
+            <div class="third">
+                <div id="third-five">
+                    <div id="number">5</div>
+                </div>
+                <div id="third-six">
+                    <div id="number">6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13. Desafio 1</title>
+
+    <Style>
+        body, html {
+            margin: 0;
+            height: 100%;
+        }
+
+        #container{
+            display: flex;
+            height: 100%;
+        }
+
+        #header{
+            background-color: rgb(230, 99, 99);
+            padding: 16px;
+        }
+
+        #main{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            background: #e062b2;
+        }
+
+        #content{
+            background: aquamarine;
+            padding: 16px;
+            flex-grow: 1;
+        }
+
+        #sidebar{
+            background-color: #eb93f3;
+            width: 85px;
+            padding: 16px;
+        }
+
+        #footer{
+            background-color: rgb(231, 239, 118);
+            padding: 16px;
+        }
+    </Style>
+</head>
+<body>
+    <div id="container">
+        <aside id="sidebar">Sidebar</aside>
+        <main id="main">
+            <header id="header">Top Menu</header>
+            <section id="content">Content</section>
+            <footer id="footer">Footer</footer>
+        </main>
+    </div>
+</body>
+</html>

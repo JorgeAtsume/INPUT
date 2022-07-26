@@ -1,0 +1,80 @@
+<!--
+    Tags de layout semânticas:
+
+    Sempre utilizar tags semanticas para deixar sua aplicação mais semantica
+    para os motores de busca e pros leitores de tela.
+
+    Sempre buscar sobre semnântica das tags no site:
+    https://allthetags.com/
+ 
+    Exemplos:
+    <nav>     - links de navegação (menu do topo)
+    <section> - tag mais semantica que <div>
+    <article> - define texto/conteudo
+    <header>  - Cabeçalho
+    <main>    - Conteudo Principal
+    <footer>  - Rodapé
+    <asisde>  - Menu lateral
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Layout semântica</title>
+
+    <style>
+        body, html{
+            margin: 0;
+            height: 100%;
+        }
+        
+        #container{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background: red;
+        }
+
+        #header{
+            background-color: rgb(230, 99, 99);
+            padding: 16px;
+        }
+        
+        #main{
+            display: flex;
+            flex-grow: 1;
+            background: #90c0f3;
+        }
+
+        #sidebar{
+            width: 85px;
+            padding: 16px;
+            background-color: #eb93f3;
+        }
+
+        #content{
+            padding: 16px;
+            background-color: aquamarine;
+            flex-grow: 1;
+        }
+
+        #footer{
+            background: rgb(231, 239, 118);
+            padding: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">Menu do topo</header>
+        <main id="main">
+            <aside id="sidebar">Barra Lateral</aside>
+            <section id="content">Conteúdo</section>
+        </main>
+        <footer id="footer">Rodapé</footer>
+    </div>
+</body>
+</html>
